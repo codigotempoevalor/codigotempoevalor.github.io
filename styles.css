@@ -327,3 +327,12 @@ footer{background:#090b0c}
 @media(max-width:900px){
   .book-side-card{display:none}
 }
+
+
+/* Uniformiza o espaçamento dos parágrafos finais da biografia */
+.author.author-editorial .author-below-photo{
+  margin-bottom:22px;
+}
+.author.author-editorial .author-below-photo p:last-child{
+  margin-bottom:0;
+}
