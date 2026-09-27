@@ -121,14 +121,3 @@ footer{background:#090b0c}
   .book-actions{align-items:flex-start;flex-direction:column;gap:18px}
 }
 
-
-/* Ferramentas & Dados */
-.tools-teaser{display:grid;grid-template-columns:1.05fr .95fr;gap:8vw;align-items:end;padding:105px 8vw;border-top:1px solid #25282a;border-bottom:1px solid #25282a;background:#101214}
-.tools-teaser h2{font-family:"Cormorant Garamond",serif;font-size:clamp(3rem,4.7vw,5.2rem);line-height:.96;font-weight:500;color:#f0e8db;max-width:780px;margin:16px 0 0}
-.tools-copy{max-width:610px}
-.tools-copy p{font-size:1rem;line-height:1.75;color:#aaa092;margin:0}
-.tools-copy .tools-status{margin-top:28px;color:#b68750;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase}
-@media(max-width:900px){
-  .tools-teaser{grid-template-columns:1fr;gap:34px;padding:76px 7vw}
-  .tools-teaser h2{font-size:clamp(2.8rem,11vw,4.2rem)}
-}
