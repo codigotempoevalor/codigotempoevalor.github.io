@@ -195,3 +195,35 @@ footer{background:#090b0c}
   .author-copy p,.author-lower p{font-size:1.18rem;text-align:left}
   .author-lower{margin-top:22px}
 }
+
+
+/* Correção do fluxo da biografia: elimina vazio sob a foto */
+.author-flow::after{content:"";display:block;clear:both}
+.author-flow .author-portrait{
+  float:left;
+  width:min(31%,400px);
+  margin:0 42px 20px 0;
+}
+.author-flow p{
+  max-width:none;
+  margin:0 0 22px;
+  color:#c2b8aa;
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(1.16rem,1.45vw,1.45rem);
+  line-height:1.48;
+  text-align:justify;
+  text-justify:inter-word;
+  hyphens:auto;
+}
+.author-flow strong{color:#c68b48;font-weight:500}
+.author-flow strong em{font-style:italic}
+.author-flow p:last-child{margin-bottom:0}
+@media(max-width:900px){
+  .author-flow .author-portrait{
+    float:none;
+    width:100%;
+    max-width:360px;
+    margin:0 0 28px;
+  }
+  .author-flow p{text-align:left;font-size:1.18rem}
+}
