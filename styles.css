@@ -30,3 +30,8 @@ footer{padding:70px clamp(24px,8vw,130px);border-top:1px solid #282a2c;text-alig
 .author-portrait:after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 70px rgba(0,0,0,.22);pointer-events:none}
 .author-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 35%;filter:saturate(.82) contrast(1.03)}
 @media(max-width:900px){.cover-frame{width:min(350px,80vw)}.author-portrait{max-width:520px}}
+
+.art-image{width:100%;aspect-ratio:1;border:1px solid #3a3024;display:grid;place-items:center;background:radial-gradient(circle at 50% 42%,#251f18,#0b0d0f 62%)}
+.art-pending span{font-family:"Cormorant Garamond",serif;color:#9a7448;letter-spacing:.18em;font-size:1rem}
+.portrait-pending{display:grid;place-items:center;background:radial-gradient(circle at 50% 35%,#262522,#111315 64%)}
+.portrait-pending span{font-family:"Cormorant Garamond",serif;font-size:7rem;color:#6b5134}
