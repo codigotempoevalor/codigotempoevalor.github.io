@@ -265,3 +265,21 @@ footer{background:#090b0c}
     hyphens:none;
   }
 }
+
+
+/* Capa editorial na coluna lateral do Volume I */
+.book-side{align-self:start}
+.book-side-cover{
+  margin:34px 0 0;
+  width:min(100%,190px);
+}
+.book-side-cover img{
+  display:block;
+  width:100%;
+  height:auto;
+  border:1px solid rgba(182,135,80,.32);
+  box-shadow:0 24px 55px rgba(0,0,0,.42);
+}
+@media(max-width:900px){
+  .book-side-cover{display:none}
+}
