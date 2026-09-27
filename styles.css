@@ -121,3 +121,13 @@ footer{background:#090b0c}
   .book-actions{align-items:flex-start;flex-direction:column;gap:18px}
 }
 
+
+
+/* Sinopse editorial do Volume I */
+.book-synopsis{max-width:850px;margin-top:26px}
+.book-synopsis p{margin:0 0 16px;max-width:820px}
+.book-synopsis .book-kicker{font-family:"Cormorant Garamond",serif;font-size:1.25rem;line-height:1.35;color:#e8dfd1}
+.book-synopsis .book-kicker strong{font-family:Inter,sans-serif;font-size:.74rem;letter-spacing:.16em;color:#b68750}
+.book-synopsis .book-kicker em{font-style:normal}
+.book-synopsis .book-volume-line{margin-top:22px;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#b68750}
+.book-synopsis + .facts{margin-top:34px}
