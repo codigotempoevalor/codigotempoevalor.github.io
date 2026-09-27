@@ -244,3 +244,24 @@ footer{background:#090b0c}
 .book-synopsis em{
   color:#c68b48;
 }
+
+
+/* Volume I — aproveitamento editorial da largura em telas grandes */
+@media(min-width:1100px){
+  .book-section{
+    grid-template-columns:minmax(180px,.32fr) minmax(0,1.68fr);
+    column-gap:42px;
+  }
+  .book-section h2{
+    max-width:1100px;
+  }
+  .book-synopsis{
+    max-width:1100px;
+  }
+  .book-synopsis p{
+    max-width:1100px;
+    text-align:justify;
+    text-justify:inter-word;
+    hyphens:none;
+  }
+}
