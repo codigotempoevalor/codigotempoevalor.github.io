@@ -238,3 +238,9 @@ footer{background:#090b0c}
 .author.author-editorial .author-below-photo p{
   max-width:none;
 }
+
+
+/* Títulos da obra na sinopse do Volume I */
+.book-synopsis em{
+  color:#c68b48;
+}
