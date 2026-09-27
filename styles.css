@@ -231,3 +231,10 @@ footer{background:#090b0c}
 /* A partir de “Nesse percurso...”, o texto passa para baixo da foto */
 .author-below-photo{clear:both}
 .author-below-photo p{max-width:none}
+
+
+/* Biografia — ocupa toda a largura disponível ao lado da foto */
+.author.author-editorial .author-flow > p,
+.author.author-editorial .author-below-photo p{
+  max-width:none;
+}
