@@ -96,3 +96,27 @@ footer{background:#090b0c}
   .cover-stage{padding:8px 0}
   .cover-frame{width:min(350px,29vw)}
 }
+
+
+/* Refinamentos consolidados da HOME */
+.book-actions{display:flex;align-items:center;gap:26px;margin-top:34px}
+.volume-link{display:block;width:max-content;margin-top:28px;font-size:.72rem;color:#6b5134;border-bottom:1px solid #a98d6b;padding-bottom:3px}
+.volume-link span{color:#9a7042}
+@media(min-width:901px){
+  .statement{padding-top:92px;padding-bottom:96px}
+  .pillars{padding-top:76px;padding-bottom:76px}
+  .pillars article{padding-top:10px;padding-bottom:20px}
+  .book-section{padding-top:96px;padding-bottom:96px}
+  .collection{padding-top:88px;padding-bottom:92px}
+  .volumes{margin-top:42px}
+  .volumes article{min-height:245px}
+  .digital{padding-top:96px;padding-bottom:105px}
+  .digital h2{font-size:clamp(3rem,5.1vw,5.1rem)}
+  .art-grid{margin-top:52px}
+  .investigations{padding-top:88px;padding-bottom:88px}
+  .investigations h2{font-size:clamp(3rem,4.5vw,4.5rem)}
+  .author{padding-top:96px;padding-bottom:96px}
+}
+@media(max-width:900px){
+  .book-actions{align-items:flex-start;flex-direction:column;gap:18px}
+}
