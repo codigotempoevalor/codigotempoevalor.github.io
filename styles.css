@@ -227,3 +227,7 @@ footer{background:#090b0c}
   }
   .author-flow p{text-align:left;font-size:1.18rem}
 }
+
+/* A partir de “Nesse percurso...”, o texto passa para baixo da foto */
+.author-below-photo{clear:both}
+.author-below-photo p{max-width:none}
