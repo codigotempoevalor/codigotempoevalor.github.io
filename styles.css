@@ -283,3 +283,47 @@ footer{background:#090b0c}
 @media(max-width:900px){
   .book-side-cover{display:none}
 }
+
+
+/* Ficha editorial lateral do Volume I */
+.book-side-card{
+  margin-top:42px;
+  width:min(100%,210px);
+}
+.book-side-rule{
+  display:block;
+  width:52px;
+  height:1px;
+  margin-bottom:24px;
+  background:#b98243;
+}
+.book-side-volume{
+  margin:0 0 12px;
+  color:#c68b48;
+  font-size:.68rem;
+  font-weight:600;
+  letter-spacing:.18em;
+}
+.book-side-title{
+  margin:0 0 28px;
+  color:#e8dfd1;
+  font-family:"Cormorant Garamond",serif;
+  font-size:1.3rem;
+  line-height:1.18;
+}
+.book-side-facts{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+  border-top:1px solid #4c4033;
+}
+.book-side-facts span{
+  padding:10px 0;
+  border-bottom:1px solid #292725;
+  color:#aaa39a;
+  font-size:.72rem;
+  letter-spacing:.04em;
+}
+@media(max-width:900px){
+  .book-side-card{display:none}
+}
