@@ -131,3 +131,67 @@ footer{background:#090b0c}
 .book-synopsis .book-kicker em{font-style:normal}
 .book-synopsis .book-volume-line{margin-top:22px;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:#b68750}
 .book-synopsis + .facts{margin-top:34px}
+
+
+/* O Autor — composição editorial aprovada */
+.author-editorial{
+  display:block;
+  padding:92px clamp(24px,8vw,145px) 100px;
+}
+.author-heading{margin-bottom:26px}
+.author-heading .eyebrow{margin-bottom:14px}
+.author-heading .eyebrow:after{
+  content:"";
+  display:block;
+  width:48px;
+  height:1px;
+  margin-top:14px;
+  background:#b98243;
+}
+.author-heading h2{
+  font-size:clamp(3.4rem,4.8vw,5rem);
+  line-height:.95;
+  white-space:nowrap;
+}
+.author-upper{
+  display:grid;
+  grid-template-columns:minmax(280px,400px) minmax(0,1fr);
+  gap:42px;
+  align-items:start;
+}
+.author-editorial .author-portrait{
+  width:100%;
+  max-width:400px;
+  aspect-ratio:1.18;
+}
+.author-editorial .author-portrait img{
+  object-position:center 34%;
+}
+.author-copy p,
+.author-lower p{
+  max-width:none;
+  margin:0 0 22px;
+  color:#c2b8aa;
+  font-family:"Cormorant Garamond",serif;
+  font-size:clamp(1.16rem,1.45vw,1.45rem);
+  line-height:1.48;
+  text-align:justify;
+  text-justify:inter-word;
+  hyphens:auto;
+}
+.author-copy p:last-child{margin-bottom:0}
+.author-copy strong{
+  color:#c68b48;
+  font-weight:500;
+}
+.author-copy strong em{font-style:italic}
+.author-lower{margin-top:28px}
+.author-lower p:last-child{margin-bottom:0}
+@media(max-width:900px){
+  .author-editorial{padding-top:82px;padding-bottom:82px}
+  .author-heading h2{white-space:normal}
+  .author-upper{grid-template-columns:1fr;gap:28px}
+  .author-editorial .author-portrait{max-width:360px;aspect-ratio:.95}
+  .author-copy p,.author-lower p{font-size:1.18rem;text-align:left}
+  .author-lower{margin-top:22px}
+}
