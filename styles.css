@@ -35,3 +35,44 @@ footer{padding:70px clamp(24px,8vw,130px);border-top:1px solid #282a2c;text-alig
 .art-pending span{font-family:"Cormorant Garamond",serif;color:#9a7448;letter-spacing:.18em;font-size:1rem}
 .portrait-pending{display:grid;place-items:center;background:radial-gradient(circle at 50% 35%,#262522,#111315 64%)}
 .portrait-pending span{font-family:"Cormorant Garamond",serif;font-size:7rem;color:#6b5134}
+
+/* Refinamento editorial */
+::selection{background:#a67843;color:#0b0d0f}
+body{overflow-x:hidden}
+.site-header{transition:background .25s ease,border-color .25s ease}
+.button{transition:background .2s ease,color .2s ease,border-color .2s ease,transform .2s ease}
+.button:hover{background:#c0935d;border-color:#c0935d;transform:translateY(-1px)}
+.hero-copy{max-width:760px}
+.cover-stage{padding:28px 0}
+.book-cover{aspect-ratio:auto;object-fit:contain}
+.digital .intro{max-width:620px;margin-left:auto;margin-right:auto}
+.art-grid{gap:24px}
+.art-card{overflow:visible}
+.author-portrait{max-width:500px}
+footer{background:#090b0c}
+@media(max-width:900px){
+  .site-header{padding:0 22px}
+  .brand{font-size:.68rem}
+  .hero{min-height:auto;padding:64px 24px 82px;gap:32px}
+  .hero h1{font-size:clamp(3.6rem,16vw,5.4rem)}
+  .statement,.pillars,.book-section,.collection,.digital,.investigations,.author{padding-left:24px;padding-right:24px}
+  .statement{padding-top:82px;padding-bottom:82px}
+  .pillars{padding-top:68px;padding-bottom:68px}
+  .book-section,.collection,.digital,.investigations,.author{padding-top:82px;padding-bottom:82px}
+  .art-grid{gap:38px}
+  .author-portrait{width:100%;max-width:480px}
+}
+@media(max-width:560px){
+  .hero h1{font-size:3.7rem}
+  .actions{align-items:flex-start;flex-direction:column;gap:18px}
+  .cover-frame{width:min(320px,84vw);padding:7px}
+  .cover-frame:before{inset:-12px}
+  .statement h2{font-size:2.8rem}
+  .pillars article{padding-left:8px;padding-right:8px}
+  .pillars h3{font-size:2.6rem}
+  .facts{gap:18px}
+  .digital h2{font-size:2.8rem}
+  .decode{font-size:1.3rem}
+  .social-links{gap:16px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.art-card img{transition:none}}
