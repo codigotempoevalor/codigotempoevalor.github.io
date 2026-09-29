@@ -340,7 +340,7 @@ footer{background:#090b0c}
 
 /* Mobile — justificação dos parágrafos longos; desktop preservado */
 @media(max-width:900px){
-  .lead,
+  .hero .lead,
   .book-synopsis p,
   .author-copy p,
   .author-lower p,
@@ -348,5 +348,10 @@ footer{background:#090b0c}
   .author-below-photo p{
     text-align:justify;
     text-justify:inter-word;
+  }
+  .hero .lead{
+    width:100%;
+    max-width:none;
+    hyphens:auto;
   }
 }
