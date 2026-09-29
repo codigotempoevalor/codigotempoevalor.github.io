@@ -336,3 +336,16 @@ footer{background:#090b0c}
 .author.author-editorial .author-below-photo p:last-child{
   margin-bottom:0;
 }
+
+
+/* Mobile — justificação dos parágrafos longos; desktop preservado */
+@media(max-width:900px){
+  .book-synopsis p,
+  .author-copy p,
+  .author-lower p,
+  .author-flow p,
+  .author-below-photo p{
+    text-align:justify;
+    text-justify:inter-word;
+  }
+}
